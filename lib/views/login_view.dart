@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:gdsc/firebase_options.dart';
 
 class LoginView extends StatefulWidget {
   const LoginView({super.key});
@@ -72,12 +74,14 @@ class _LoginViewState extends State<LoginView> {
                 }
               },
               child: const Text('Login')),
+          TextButton(
+              onPressed: () {
+                Navigator.of(context)
+                    .pushNamedAndRemoveUntil('/register/', (route) => false);
+              },
+              child: const Text("Register Here")),
         ],
       ),
     );
   }
 }
-    // TODO: implement build
-  
-  
-
