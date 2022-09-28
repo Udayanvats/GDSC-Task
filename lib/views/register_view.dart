@@ -29,7 +29,6 @@ class _RegisterViewState extends State<RegisterView> {
   void dispose() {
     _email.dispose();
     _password.dispose();
-    // TODO: implement dispose
     super.dispose();
   }
 

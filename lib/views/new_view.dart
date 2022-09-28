@@ -1,13 +1,8 @@
 import 'package:flutter/material.dart';
 
-class NewView extends StatefulWidget {
+class NewView extends StatelessWidget {
   const NewView({super.key});
 
-  @override
-  State<NewView> createState() => _NewViewState();
-}
-
-class _NewViewState extends State<NewView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,10 +12,14 @@ class _NewViewState extends State<NewView> {
       // appBar: AppBar(title: const Text('Login')),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
+        // ignore: prefer_const_literals_to_create_immutables
         children: [
+          // ignore: prefer_const_constructors
           SafeArea(
+            // ignore: prefer_const_constructors
             child: Text(
-              'Welcome !',
+              '\t\t\t\t\tWelcome !',
+              // ignore: prefer_const_constructors
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 50,
