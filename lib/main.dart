@@ -11,6 +11,7 @@ import 'package:gdsc/views/verify_email_view.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   runApp(MaterialApp(
+     debugShowCheckedModeBanner: false,
     title: 'GDSC',
     theme: ThemeData(
         //   primarySwatch: Colors.red,
@@ -41,7 +42,7 @@ class Homepage extends StatelessWidget {
               final user = FirebaseAuth.instance.currentUser;
               if (user != null) {
                 if (user.emailVerified) {
-                print("Email is Verified");
+                  print("Email is Verified");
                 } else {
                   return const VerifyEmailView();
                 }

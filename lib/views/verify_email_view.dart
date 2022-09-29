@@ -18,8 +18,8 @@ class _VerifyEmailViewState extends State<VerifyEmailView> {
         children: [
           const SafeArea(
             child: Padding(
-              padding: EdgeInsets.all(25),
-              child: Text("\t\t\t\t\tVerification Email Sent",
+              padding: EdgeInsets.symmetric(horizontal: 25),
+              child: Text("Verification Email Sent",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
             ),
           ),

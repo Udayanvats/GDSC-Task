@@ -41,6 +41,7 @@ class _LoginViewState extends State<LoginView> {
       backgroundColor: Colors.white,
 
       // appBar: AppBar(title: const Text('Login')),
+
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -161,8 +162,9 @@ class _LoginViewState extends State<LoginView> {
   }
 
   void togglePassword() {
-    isPasswordHidden = !isPasswordHidden;
-    setState(() {});
+    setState(() {
+      isPasswordHidden = !isPasswordHidden;
+    });
   }
 }
 
